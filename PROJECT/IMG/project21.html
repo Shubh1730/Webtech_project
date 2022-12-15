@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        . {
+            box-sizing: border-box;
+        }
+
+        #parent {
+            height: 650px;
+            width: 1480px;
+            border: 1px solid;
+            background-image: url(./net1.jpg);
+            /* opacity: 0.9; */
+            display: flex;
+        }
+
+        #child {
+            height: 150px;
+            width: 1480px;
+            border: 1px solid;
+            display: flex;
+        }
+
+        #c1 {
+            height: 80px;
+            width: 250px;
+            border: 1px solid;
+            margin-left: 70px;
+            margin-top: 40px;
+            font-weight: lighter;
+
+
+        }
+
+        #c2 {
+            height: 80px;
+            width: 200px;
+            border: 1px solid;
+            margin-left: 850px;
+            margin-top: 40px;
+        }
+
+        #select {
+            font-size: 30px;
+            background-color: transparent;
+            color: aliceblue;
+            font-family: 'Times New Roman', Times, serif;
+            border: none;
+        }
+
+        .op {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        #blk {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.6;
+        }
+
+        #c3 {
+            height: 50px;
+            width: 400px;
+            /* border: 1px solid; */
+            margin-left: 50px;
+            margin-top: 45px;
+            color: aliceblue;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: lighter;
+            /* border: 1px solid; */
+            font-size: 25px;
+            background-color: rgb(228, 17, 17);
+            font-family: 'Times New Roman', Times, serif;
+            border: none;
+        }
+        #child2{
+            height: 500px;
+            width: 800px;
+            /* border: 1px solid white; */
+            margin: auto;
+            margin-top: 50px;
+        }
+        #x1{
+            height: 150px;
+            width: 100%;
+            /* border: 1px solid white; */
+            color: white;
+            font-size: 60px;
+            text-align: center;
+            font-family: sans-serif;
+            text-shadow: 2px 2px 40px white ;
+        
+        }
+        #x2{
+            height: 80px;
+            width: 100%;
+            /* border: 1px solid white; */
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            font-family: sans-serif;
+            text-shadow: 2px 2px 30px rgb(219, 219, 219) ;
+            
+        }
+        #x3{
+            height: 60px;
+            width: 100%;
+            /* border: 1px solid white; */
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            font-family: sans-serif;
+            text-shadow: 2px 2px 30px rgb(219, 219, 219) ;
+            
+        }
+        #bar{
+            height: 80px;
+            width: 100%;
+            /* border: 1px solid white; */
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            font-family: sans-serif;
+            text-shadow: 2px 2px 30px rgb(219, 219, 219) ;
+            display: flex;
+        }
+        #bar1{
+            height: 60px;
+            width: 80%;
+            /* border: 1px solid white; */
+            
+        }
+         #bar2{
+            height: 67px;
+            width: 150px;
+            /* border: 1px solid white; */
+            background-color: crimson;
+            opacity: 5px 5px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="blk">
+            <div id="child">
+                <div id="c1"><label for=""
+                        style="font-size: 50PX ;color: rgb(228, 17, 17);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-weight: lighter; ">NETFLIX</label>
+                </div>
+                <div id="c2"><select name="" id="select">
+                        <option class="op" value="State">English </option>
+                        <option class="op" value="MAHARASHTRA">Hindi</option>
+                        <option class="op" value="BIHAR">telugu</option>
+                        <option class="op" value="UP">Marathi</option>
+                        <option class="op" value="MP">kannad</option>
+                    </select></div>
+                <div id="c3">
+                    <a href="">Sign in</a>
+                </div>
+                <div id="c1"></div>
+                <div></div>
+            </div>
+            <div id="child2">
+                <div id="x1">
+                    <label for=""> Unlimited movies, TV shows and more.</label>
+                </div>
+                <div id="x2"> 
+                    <label for="">Watch anywhere.Cancel anytime.</label>
+                </div>
+                <div id="x3">
+                    <label for="">
+                        Ready to watch? Enter your email to create or reset your membership.
+                    </label>
+                </div>
+                <div id="bar">
+                    <div id="bar1"><input type="email" name="" id="" placeholder="Enter Your Email" style="height:100% ; width:100% ; font-size: 30px;"></div>
+                    <div id="bar2"><a href="">Get Started ></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

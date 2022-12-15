@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(35, 3, 10);
+            font-family: 'Times New Roman';
+        }
+        .{
+            
+        }
+
+        .parent {
+            height: 550px;
+            width: 900px;
+            margin: 0 auto;
+            margin-top: 90px;
+            /* border: 2px solid; */
+            box-sizing: border-box;
+            background-color:rgb(153, 168, 168);
+            display: flex;
+            border-radius: 13px;
+            box-shadow: 3px 3px 1px black;
+        }
+
+        .child {
+            background-image: url(./IMG/pexels-louis-2101187.jpg);
+            background-size: cover;
+            /* border: 2px solid; */
+            height: 550px;
+            width: 350px;
+            border-top-left-radius: 13px;
+            border-bottom-left-radius: 13px;
+        }
+
+        .child1 form {
+            /* border: 1px solid; */
+            height: 500px;
+            width: 500px;
+            padding: 2px 3px;
+
+        }
+
+        .child1 form input {
+            height: 30px;
+            width: 315px;
+            padding: 1px 9px;
+            margin: 22px 5px;
+            border-radius: 8px;
+            box-shadow: 2px 3px 1px black;
+        }
+
+        .child1 form select {
+            height: 36px;
+            width: 87px;
+            padding: 1px 9px;
+            margin: 24px 5px;
+            border-radius: 8px;
+            box-shadow: 2px 3px 1px black;
+
+        }
+
+        .child1 form button {
+            margin-left: 7px;
+            padding: 8px 30px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 1px black;
+
+        }
+
+        .child1 form button:hover {
+            background-color: blue;
+            text-decoration: underline;
+            border-radius: 10px;
+        }
+
+        .child1 h1 {
+            margin-left: 74px;
+            text-shadow: 2px 1px 1px black;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+        </div>
+        <div class="child1">
+            <h1>REGISTRATION INFO</h1>
+            <form action="">
+                <input type="text" placeholder="Name">
+                <br>
+                <input type="date" name="" id="" placeholder="Birth Date">
+                <!-- <label for="">DOB</label> -->
+                <label for="">Gender</label>
+                <select name="" id="">
+                    <option value="" selected disabled>Gender</option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                </select>
+                <br>
+                <input type="text" placeholder="Class">
+                <br>
+                <input type="text" placeholder="Registration Code">
+                <br>
+                <button ><u><b >Submit</b></u></button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

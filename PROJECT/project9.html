@@ -1,0 +1,141 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            background-image:url(./IMG/student-g3b81c8fd9_1920.jpg);
+            background-repeat: no-repeat;
+         }
+        #parent{
+            height: 600px;
+            width: 750px;
+            margin:0 auto;
+            margin-top: 160px;
+            display: flex;
+        }
+        .child{
+            /* height: 400px; */
+            /* width: 325px;             */
+        }
+        #img{
+            background-image: url(./IMG/business-g75e668560_1920.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.7;
+        }
+        #form{
+            justify-content: center;
+            background-color:whitesmoke;
+        }
+        h2{
+            display: flex;
+            justify-content: center;
+        }
+        input{
+            border: none;
+            outline: none;
+            border-bottom: 1px solid;
+            padding: 9px 62px 10px 7px;
+            margin: 11px 44px 12px 40px;
+            font-size: 16px;
+        }
+        #login{
+            height: 40px;
+            width: 600px;
+            padding: 10px 30px 16px 20px ;
+            text-decoration: none;
+            border: 1px solid;
+            border-radius: 80px;
+            background-color: rgb(230, 77, 87);           
+            margin: 17px 20px 32px 210px;
+            margin-top: 40px;
+            box-shadow: 5px 2px 3px;
+            /* text-shadow: black 5px; */
+            
+        }
+        span{
+            margin: 6px -73px ;
+            padding: 20px 149px 24px 33px;
+        }
+        #forgot{
+            margin: 0px 0px 0px -29px;
+        }
+        #fb{
+            height: 100px;
+            width: 200px;
+            border: 1px solid;
+        }
+        #con{
+            margin: 10px 20px 20px 10px;
+            padding: 10px 20px;
+        }
+        h1{
+            font-size: 50px;
+            color: white;
+            margin-top: 90px;
+            margin-left: 20px;
+            box-shadow: black(4px 4px 5px);
+        }
+        #ls{
+            padding: 10px 20px 30px;
+            margin: 50px 100px ;
+            justify-content: center;
+        }
+        #fb{
+            height: 30px;
+            color:black;
+            width: 50px;
+            border: 1px solid;
+            padding: 11px 39px;
+            border-radius: 40px;
+            box-shadow: 5px 5px 5px;
+            background-color: blue;
+            
+        }
+        #twtr{
+            height: 30px;
+            width: 50px;
+            color:black;
+            border: 1px solid;
+            padding: 11px 39px;
+            border-radius: 40px;
+            background-color: rgb(63, 129, 230);
+            box-shadow: 5px 5px 5px;
+
+        }
+    </style>
+</head>
+<body >
+    <div id="parent">
+        <div id="img" class="child">
+            <h1>Hello World.</h1>
+           <span id="ls"> You can listen the music anyone and anywhere you want</span> <br>
+
+            <h3>Login with social media</h3>
+            <a id="fb" href="#">f</a>   <a id="twtr" href="#">login with twitter</a>
+        </div>
+        <div id="form" class="child">
+            <form action="">
+                <h2>Login</h2>
+                <span id="con"> Don't have an account? <a href="#">Create your account</a> it takes
+                less than a minute</span>  <br>
+
+                <input type="text" placeholder="enter name"><br>
+                <input type="password" placeholder="enter password"><br>
+
+                
+                <input type="checkbox" name="box">
+                <span> Remember me</span>
+
+                <a id="forgot" href="#">Forgot password?</a><br><br>
+
+                <a id="login" href="#">Login</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

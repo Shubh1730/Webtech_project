@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent"  onmouseover="shubh()" onmouseout="shubh1()"> my first event listener</div>
+    <!-- <button onclick="shubh()">UPDATE</button> -->
+
+    <script>
+        var color1=document.getElementById('parent').style.color='red'
+        var element=document.getElementById('parent')
+        function  shubh() {
+            if (color1=='red') {
+                element.style.height="500px"
+                element.style.width="500px"
+                element.style.backgroundColor="blue"
+                element.innerHTML=Date();
+                element.style.borderRadius="100%"
+            }
+            else
+            {
+                element.style.height="600px"
+                element.style.width="600px"
+                element.style.color="green"
+            }
+           
+        }
+        function shubh1() {
+                element.style.height="700px"
+                element.style.width="700px"
+                element.style.color="black"
+                element.style.backgroundColor="pink"
+                element.style.borderRadius="70px"
+                
+            }
+    </script>
+
+</body>
+</html>

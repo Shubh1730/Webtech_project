@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select  id="car" onchange="shu()">
+        <option  class="op" value="MERCEDES">MERCEDES</option>
+        <option class="op" value="BMW">BMW</option>
+        <option class="op" value="ROLLS">ROLLS</option>
+        <option class="op" value="AUDI">AUDI</option>
+
+    </select>
+
+    <h1 id="demo"></h1>
+    <script>
+        function shu() {
+            var select=document.getElementById('car').value;
+            var select1=document.getElementsByClassName('op')
+            var box=document.getElementById('demo');
+            box.innerHTML="you win car is"+select;
+            box.style.color="white"
+
+            
+        }
+    </script>
+</body>
+</html>

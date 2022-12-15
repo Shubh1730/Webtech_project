@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body
+    {
+        display: flex;
+        justify-content: center;
+    }
+    #parent{
+        height: 1000px;
+        width: 1200px;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(./business-g75e668560_1920.jpg);
+    }
+    h1{
+        margin-top: -450px;
+    }
+    #outer{
+        height: 800px;
+        width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        background:  rgb(27, 26, 26);
+        opacity: 0.7;
+        position: absolute;
+        margin-left: 50px;
+        color: white;
+        background-clip: transparent;
+    }
+    #child1{
+        height: 450px;
+        width: 400px;
+        margin-left: 20px;
+        margin-top: 20px;
+        display: flex;
+    }
+    #child2{
+        height: 300px;
+        width: 400px;
+        margin-left: 100px;
+        margin-top: 30px;
+        display: flex;
+    }
+    #child3{
+        height: 300px;
+        width: 400px;
+        margin-left: 100px;
+        margin-top: 30px;
+        display: flex;
+        margin-left: -410px;
+        margin-top: 170px;
+    }
+    .f1{
+        height: 300px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+    #f11{
+        width: 170px;
+    }
+    #f12{
+        width: 230px;
+    }
+    input{
+        width: 210px;
+        height: 35px;
+        font-size: 20px;
+        background: none;
+        border: 1px solid white;
+    }
+    #f21{
+        height: 300px;
+        width: 170px;
+        font-size: 20px;
+    }
+    #name1{
+        height: 30px;
+        font-size: 20px;
+        width: 200px;
+        background: rgb(27, 26, 26);
+        border: 1px solid white;
+        color: white;
+        
+    }
+    input[type="radio"]{
+        height: 15px;
+        font-size: 50px;
+        margin-left: -100px;
+    }
+    .rate{
+        margin-left: -100px;
+    }
+    .support{
+        height: 300px;
+        width: 200px;
+        font-size: 20px;
+        line-height: 50px;
+    }
+    #enquiry{
+        height: 200px;
+        width: 1000px;
+        margin-left: -900px;
+        margin-top: 500px;
+        display: flex;
+    }
+    #e1{
+        height: 200px;
+        width: 200px;
+    }
+    #enq{
+        height: 170px;
+        width: 800px;
+        border: 1px solid white;
+    }
+    #button{
+        margin-left: -680px;
+        margin-top: 700px;
+    }
+    a{
+        text-decoration: none;
+        border: none;
+        color: white;
+        background-color: orange;
+        margin: 10px;
+        padding: 10px 50px;
+    }
+</style>
+<body>
+    <div id="parent">
+        <center><h1 style="color: white;">FEEDBACK FORM</h1></center>
+        <div id="outer">
+            <div id="child1">
+                <div id="f11" class="f1">
+                    <label for="cust">Customer Name</label><br>
+                    <label for="email">Email Address</label><br>
+                    <label for="orga">Organization</label><br>
+                    <label for="rate">Rating for Company</label>
+                </div>
+                <div id="f12" class="f1">
+                   :  <input type="text" name="" id="cust" placeholder="Customer Name"><br>
+                   :  <input type="email" name="" id="email" placeholder="Email"><br>
+                   :  <input type="text" name="" id="orga" placeholder="Organization"><br>
+                   :  <input type="radio" name="rate1" id=""> <label for="" class="rate">Very High</label><br>
+                      <input type="radio" name="rate1" id=""> <label for="" class="rate">High</label><br>
+                      <input type="radio" name="rate1" id=""> <label for="" class="rate">Medium</label><br>
+                      <input type="radio" name="rate1" id=""> <label for="" class="rate">Low</label><br>
+                      <input type="radio" name="rate1" id=""> <label for="" class="rate">Very Low</label><br>
+                </div>
+            </div>
+            <div id="child2">
+                <div id="f21"><label for="name1">Products you like</label></div>
+               <div id="f22">
+                :  <select name="" id="name1">
+                    <option value="" selected disabled style="width: 200px;">Products</option>
+                    <option value="">TV</option>
+                    <option value="">Mobile</option>
+                    <option value="">Laptop</option>
+                   </select>
+               </div>
+        </div>
+        <div id="child3">
+            <div class="support" id="support1">Rating for support :</div>
+            <div class="support" id="support2"><input type="radio" name="rate1" id=""> <label for="" class="rate">Very Good</label><br>
+                      <input type="radio" name="rate1" id=""> <label for="" class="rate">Good</label><br>
+                      <input type="radio" name="rate1" id=""> <label for="" class="rate">Average</label><br>
+                      <input type="radio" name="rate1" id=""> <label for="" class="rate">Poor</label><br>
+                      <input type="radio" name="rate1" id=""> <label for="" class="rate">Very Poor</label><br></div>
+        </div>
+        <div id="enquiry">
+            <div id="e1"><label for="enq" style="font-size: 25px;">Customer Enquiry :</label></div>
+            <div id="e2"><input type="text" name="" id="enq"></div>
+        </div>
+        <div id="button">
+            <a href="#">SUBMIT</a>
+            <a href="#">RESET</a>
+        </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 600px;
+            width: 600px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .box{
+            height: 100px;
+            width: 60px;
+            border: 1px solid;
+        }
+        #child1{
+            order: 2;
+            /*order:3px;*/
+        }
+        #child2{
+            order: -1;
+        }
+        #child3{
+            order: -2;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="box" id="child1">box1</div>
+        <div class="box" id="child2">box2</div>
+        <div class="box" id="child3">box3</div>
+        <div class="box" id="child4">box4</div>
+    </div>
+</body>
+</html>
